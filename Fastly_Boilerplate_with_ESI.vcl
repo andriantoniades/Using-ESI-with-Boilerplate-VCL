@@ -14,7 +14,6 @@ sub vcl_fetch {
   
   #begin your esi code here
   if (req.url == "/esi_example") {
-    set req.esi = true;
     esi;
   }
 
